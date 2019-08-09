@@ -29,17 +29,6 @@ public class VrController : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Calibrates Y angle 
-    /// </summary>
-    public void Calibrate()
-    {
-        //FIXME: Calibrate it doesn't work now
-        calibrationYAngle = transform.localEulerAngles.z;
-        transform.Rotate(0f,-calibrationYAngle,180f,Space.Self);
-        ActivateGyro();
-    }
-
     private void FixedUpdate()
     {
         if (gyroWork)
