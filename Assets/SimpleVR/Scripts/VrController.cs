@@ -21,7 +21,7 @@ public class VrController : MonoBehaviour
             gyroscope = Input.gyro;
             gyroscope.enabled = true;
             Application.targetFrameRate = 60;
-
+            gyroWork = true;
         }
         else
         {
@@ -50,6 +50,6 @@ public class VrController : MonoBehaviour
     private void UpdateRotation()
     {
         transform.localRotation = gyroscope.attitude;
-        transform.Rotate(0f, 0f, 180f, Space.Self);
+        transform.Rotate(0f, calibrationYAngle, 180f, Space.Self);
     }
 }
