@@ -34,8 +34,9 @@ public class VrController : MonoBehaviour
     /// </summary>
     public void Calibrate()
     {
+        //FIXME: Calibrate it doesn't work now
         calibrationYAngle = transform.localEulerAngles.z;
-        transform.Rotate(0f,0f,-calibrationYAngle,Space.Self);
+        transform.Rotate(0f,-calibrationYAngle,180f,Space.Self);
         ActivateGyro();
     }
 
@@ -50,6 +51,6 @@ public class VrController : MonoBehaviour
     private void UpdateRotation()
     {
         transform.localRotation = gyroscope.attitude;
-        transform.Rotate(0f, calibrationYAngle, 180f, Space.Self);
+        transform.Rotate(0f, 0f, 180f, Space.Self);
     }
 }
