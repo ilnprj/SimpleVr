@@ -3,7 +3,7 @@
 public class Raycaster : MonoBehaviour
 {
     public System.Action<bool> SelectStatusHandler = delegate { };
-    private bool hit;
+    private bool hit = default;
     public bool Hit
     {
         get
