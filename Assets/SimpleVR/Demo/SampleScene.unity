@@ -989,7 +989,6 @@ GameObject:
   m_Component:
   - component: {fileID: 548541749}
   - component: {fileID: 548541748}
-  - component: {fileID: 548541750}
   m_Layer: 0
   m_Name: CameraController
   m_TagString: Untagged
@@ -1021,20 +1020,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 180, y: 180, z: 180}
---- !u!114 &548541750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 548541747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ec31af71b18d094f9af91f88c3e571e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sensivity: 100
-  clampAngle: 80
 --- !u!1 &598095674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1673,7 +1658,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 07d08425597f6254b9c462e7b2d0de6c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3697,8 +3682,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2079534492}
   - component: {fileID: 2079534493}
-  - component: {fileID: 2079534494}
   - component: {fileID: 2079534495}
+  - component: {fileID: 2079534496}
   m_Layer: 0
   m_Name: VR_Eyes
   m_TagString: Untagged
@@ -3730,21 +3715,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079534491}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 254358f4ab38d114e9db1a51a639ba43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2079534494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2079534491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eba4b52e92a0814db9c5996167beaf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2079534495
@@ -3759,6 +3732,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c392c1b5bb366c2428a636f35a2a88f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxDistanceRay: 10
+--- !u!114 &2079534496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079534491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec31af71b18d094f9af91f88c3e571e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensivity: 100
+  clampAngle: 80
 --- !u!1 &2079977264
 GameObject:
   m_ObjectHideFlags: 0
