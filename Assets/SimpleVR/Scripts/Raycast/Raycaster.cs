@@ -16,15 +16,24 @@ public class Raycaster : MonoBehaviour
             if (hit != value)
             {
                 SelectStatusHandler?.Invoke(value);
-                if (_targetManager!=null)
-                _targetManager.HandlingTarget(raycast.collider.gameObject);
+                if (_targetManager != null)
+                {
+                    if (raycast.collider != null)
+                    {
+                        _targetManager.SelectTarget(raycast.collider.gameObject);
+                    }
+                    else
+                    {
+                        _targetManager.DeselectTarget();
+                    }
+                }
             }
             hit = value;
         }
     }
 
     [SerializeField]
-    private float maxDistanceRay = 10f;
+    private float maxDistanceRay = 100f;
     private RaycastHit raycast;
     private Vector3 dir = default;
     private ITargetManager _targetManager;

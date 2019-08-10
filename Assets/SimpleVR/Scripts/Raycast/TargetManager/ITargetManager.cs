@@ -4,5 +4,7 @@ using UnityEngine;
 
 public interface ITargetManager 
 {
-    void HandlingTarget(GameObject gameObject);
+    void SelectTarget(GameObject gameObject);
+
+    void DeselectTarget();
 }
