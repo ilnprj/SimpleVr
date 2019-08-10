@@ -758,7 +758,6 @@ GameObject:
   - component: {fileID: 441357543}
   - component: {fileID: 441357546}
   - component: {fileID: 441357545}
-  - component: {fileID: 441357544}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -787,23 +786,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &441357544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441357542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &441357545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3716,6 +3698,7 @@ GameObject:
   - component: {fileID: 2079534492}
   - component: {fileID: 2079534493}
   - component: {fileID: 2079534494}
+  - component: {fileID: 2079534495}
   m_Layer: 0
   m_Name: VR_Eyes
   m_TagString: Untagged
@@ -3762,6 +3745,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4eba4b52e92a0814db9c5996167beaf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2079534495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079534491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c392c1b5bb366c2428a636f35a2a88f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2079977264
