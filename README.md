@@ -24,5 +24,5 @@ Simple VR Controller for Unity
   - Prefab, contains two variants (VREyes, Panorama)
 
 ### Download:
-- [UnityPackage](url)
-- [Test Build](url)
+- [Test Build](https://gitlab.com/ilnprj/simplevr/blob/release/SimpleVR.apk)
+- [UnityPackage](https://gitlab.com/ilnprj/simplevr/blob/release/VRSimple_v1.0.1.unitypackage)
