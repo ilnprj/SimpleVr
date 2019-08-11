@@ -3,10 +3,9 @@
 /*/
 
 # Inverse ignore some stuff
-!/Assets/
-!/ProjectSettings/
-!/Packages/
 !.gitignore
+!*.unitypackage
+!*.apk
 
 # OS Stuff
 .DS_Store
