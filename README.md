@@ -1,6 +1,6 @@
 # SimpleVr
 
-Simple VR Controller for Unity
+Simple VR Controller for Unity (Only rotation in VR and auto target in aim)
 
 ## Features:
 
