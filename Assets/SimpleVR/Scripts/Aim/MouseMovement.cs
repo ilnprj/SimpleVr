@@ -10,7 +10,7 @@ public class MouseMovement : MonoBehaviour
     private float rotY = default;
     private float rotX = default;
     private Quaternion resultRotation = default;
-    
+
     private void Start()
     {
         Vector3 rot = transform.localRotation.eulerAngles;
@@ -20,10 +20,12 @@ public class MouseMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+#if UNITY_STANDALONE || UNITY_EDITOR
         rotY += Input.GetAxis("Mouse X") * sensivity * Time.deltaTime;
         rotX += -Input.GetAxis("Mouse Y") * sensivity * Time.deltaTime;
         rotX = Mathf.Clamp(rotX, -clampAngle, clampAngle);
         resultRotation = Quaternion.Euler(rotX, rotY, 0.0f);
         transform.rotation = resultRotation;
+#endif
     }
 }

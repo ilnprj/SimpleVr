@@ -36,7 +36,6 @@ public class SwitcherMode : MonoBehaviour
                 {
                     VrObject.SetActive(true);
                     Panorama.SetActive(false);
-                    mouseMovement.enabled = false;
                     break;
                 }
 
@@ -44,15 +43,6 @@ public class SwitcherMode : MonoBehaviour
                 {
                     VrObject.SetActive(false);
                     Panorama.SetActive(true);
-                    mouseMovement.enabled = false;
-                    break;
-                }
-
-            case 2:
-                {
-                    VrObject.SetActive(false);
-                    Panorama.SetActive(true);
-                    mouseMovement.enabled = true;
                     break;
                 }
         }
